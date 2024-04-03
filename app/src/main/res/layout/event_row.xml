@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvEventName"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:textColor="#000000"
+            android:textSize="23dp"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"
+            android:text="Event Name"
+            android:gravity="center_vertical"/>
+        <TextView
+            android:id="@+id/tvEventPlace"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:paddingLeft="10dp"
+            android:text="Event place name"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvEventDateTime"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:text="Aug 17,2023"
+        android:gravity="center_vertical"/>
+</LinearLayout>

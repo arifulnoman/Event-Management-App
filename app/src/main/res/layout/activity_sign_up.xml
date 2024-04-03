@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffff00"
+    tools:context=".SignUpActivity">
+    <TextView
+        android:id="@+id/tvTittle"
+        android:layout_width="match_parent"
+        android:textColor="@color/black"
+        android:layout_height="60dp"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Signup"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#eeeeee"
+        android:layout_margin="8dp"
+        android:padding="12dp"
+        android:layout_weight="1">
+        <TableRow
+            android:id="@+id/rowName">
+            <TextView
+                android:text="Name"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginRight="12dp"/>
+
+            <EditText
+                android:id="@+id/etName"
+                android:textColor="@color/black"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:inputType="text"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/rowEmail">
+            <TextView
+                android:text="Email"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginRight="12dp"/>
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:textColor="@color/black"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:inputType="textEmailAddress"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/rowPhone">
+            <TextView
+                android:text="Phone"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginRight="12dp"/>
+
+            <EditText
+                android:id="@+id/etPhone"
+                android:textColor="@color/black"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:inputType="phone"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="User ID"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginRight="12dp"/>
+
+            <EditText
+                android:id="@+id/etUserId"
+                android:textColor="@color/black"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:inputType="text"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Password"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginRight="12dp"/>
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:textColor="@color/black"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:inputType="textPassword"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/rowRePassword">
+            <TextView
+                android:text="Re-enter Password"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginRight="12dp"/>
+
+            <EditText
+                android:id="@+id/etRePassword"
+                android:textColor="@color/black"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:inputType="textPassword"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </TableRow>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            <CheckBox
+                android:id="@+id/checkBox1"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remember User ID" />
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:text="Remember Password" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tvToggleLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Already have account?"
+                android:textStyle="bold"
+                android:layout_marginRight="10dp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@+id/btnToggle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="Login"
+                android:textColor="#0000FF"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
+        </LinearLayout>
+    </TableLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/tvExit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="Exit"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/tvGo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="Go"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+</LinearLayout>

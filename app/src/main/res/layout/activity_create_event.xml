@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffff00">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Event Information"
+        android:textColor="@color/black"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#eeeeee"
+        android:layout_margin="8dp"
+        android:padding="12dp"
+        android:layout_weight="1">
+
+        <TableRow>
+            <TextView
+                android:text="Name"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginRight="12dp"/>
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:inputType="text"
+                android:textColor="@color/black"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Place"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginRight="12dp"/>
+
+            <EditText
+                android:id="@+id/etPlace"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:inputType="text"
+                android:textColor="@color/black"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Type"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="12dp"/>
+
+            <RadioGroup
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:id="@+id/radioGroup">
+                <RadioButton
+                    android:id="@+id/rdIndoor"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    android:text="Indoor" />
+
+                <RadioButton
+                    android:id="@+id/rdOutdoor"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    android:text="Outdoor" />
+
+                <RadioButton
+                    android:id="@+id/rdOnline"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    android:text="Online" />
+
+            </RadioGroup>
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Date &amp; Time"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginRight="12dp"/>
+
+            <EditText
+                android:id="@+id/etDate"
+                android:textColor="@color/black"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:inputType="datetime"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Capacity"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginRight="12dp"/>
+
+            <EditText
+                android:id="@+id/etCapacity"
+                android:textColor="@color/black"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:inputType="number"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Budget"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginRight="12dp"/>
+
+            <EditText
+                android:id="@+id/etBudget"
+                android:textColor="@color/black"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:inputType="numberDecimal"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Email"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginRight="12dp"/>
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="0dp"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:inputType="textEmailAddress"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Phone"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginRight="12dp"/>
+
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="0dp"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:inputType="phone"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Description"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginRight="12dp"/>
+
+            <EditText
+                android:id="@+id/etDescription"
+                android:textColor="@color/black"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:lines="3"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </TableRow>
+
+        <TextView
+            android:id="@+id/tvErrorMsg"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:padding="16dp"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:text="Error text message will be here"
+            android:textColor="#FD0000"/>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:backgroundTint="#ffff00"
+            android:textColor="#000000"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/btnShare"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:backgroundTint="#ffff00"
+            android:textColor="#000000"
+            android:text="Share" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:backgroundTint="#ffff00"
+            android:textColor="#000000"
+            android:text="Save" />
+
+    </LinearLayout>
+
+</LinearLayout>
